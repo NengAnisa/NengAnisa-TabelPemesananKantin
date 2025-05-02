@@ -54,7 +54,7 @@ $menuTersedia = [
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!isset($_POST['menu']) || count($_POST['menu']) === 0) {
         $_SESSION['error'] = "Silakan pilih setidaknya satu makanan.";
-        header("Location: pesananmitaaa.php");
+        header("Location: tabelpemesanan.anisa.php");
         exit;
     }
 
@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php if (!$udahOrder): ?>
     <h2>Form Pemesanan Makanan Kantin</h2>
-    <form method="post" action="pesananmitaaa.php">
+    <form method="post" action="tabelpemesanan.anisa.php">
         <p>Pilih menu:</p>
         <?php foreach ($menuTersedia as $key => $menu): ?>
             <label>
